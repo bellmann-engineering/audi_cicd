@@ -21,4 +21,4 @@ CheckOptions:
   - key:             cppcoreguidelines-pro-type-vararg.ParameterConstraint
     value:           'disabled'
   - key:             modernize-use-trailing-return-type
-    value:           'false'
+    value:           'disabled'
