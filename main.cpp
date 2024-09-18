@@ -1,9 +1,10 @@
 #include <iostream>
-using namespace std;
-auto main() -> int {
 
-  for(int i=0; i<5; i++) {
-    cout << "Hello World" << endl;
+int main() {
+
+  const int end = 5;
+  for(int i=0; i<end; i++) {
+    std::cout << "Hello World" << std::endl;
   }
   
   return 0;
