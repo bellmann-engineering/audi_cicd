@@ -31,5 +31,15 @@ jobs:
     - name: Run clang-tidy
       run: clang-tidy main.cpp -- -std=c++17    
 
+    - name: Zip the executable
+      run: zip setup.zip HelloWorld
+      
+    - name: Upload build artifact
+      uses: actions/upload-artifact@v3
+      with:
+        name: setup-zip
+        path: ./setup.zip
+
     #- name: Run the tests
     #  run: ./tests && echo "All tests passed!"
+  
